@@ -1,0 +1,16 @@
+<Solution>
+  <Folder Name="/Application/">
+    <Project Path="MS.Application.Contracts/MS.Application.Contracts.csproj" Id="55b1ce56-7b2b-43d6-8d41-ec161b041454" />
+    <Project Path="MS.Application/MS.Application.csproj" Id="ecdc6d29-7d8c-47b6-a41d-83ff32025131" />
+  </Folder>
+  <Folder Name="/Domain/">
+    <Project Path="MS.Domain/MS.Domain.csproj" />
+  </Folder>
+  <Folder Name="/Infrastructure/">
+    <Project Path="MS.Infrastructure.Configuration/MS.Infrastructure.Configuration.csproj" Id="b8579f38-6d78-42fb-85e4-0cb53cb47fba" />
+    <Project Path="MS.Infrastructure.EF/MS.Infrastructure.EF.csproj" Id="e044cbba-83d4-4c42-976e-820651a5001c" />
+  </Folder>
+  <Folder Name="/WebAPi/">
+    <Project Path="MS.WebAPI/MS.WebAPI.csproj" Id="bcffbc3c-bcaa-48eb-b06f-1d147c554ed5" />
+  </Folder>
+</Solution>

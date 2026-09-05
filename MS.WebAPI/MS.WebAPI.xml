@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MS.WebAPI</name>
+    </assembly>
+    <members>
+        <member name="M:MS.WebAPI.Controllers.AppointmentController.Create(MS.Application.Contracts.Appointment.DTOs.AppointmentCreateDTO)">
+            <summary>
+                create a appointment for one patient        
+            </summary>
+            <param name="Appointment">
+                we need patient id , doctor id , appointment date and time
+                appointment time and date must be in doctor working hours
+            </param>
+            <returns>
+                the created appointment details
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.AppointmentController.Update(MS.Application.Contracts.Appointment.DTOs.AppointmentUpdateDTO)">
+            <summary>
+                chenge details of a appointment
+            </summary>
+            <param name="Appointment">
+                we need patient id , doctor id , appointment date and time , appointment id
+                appointment time and date must be in doctor working hours
+            </param>
+            <returns>
+                the updated appointment details
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.AppointmentController.Cancel(System.Int32)">
+            <summary>
+                cancel a appointment
+                by changin appointment status
+            </summary>
+            <param name="appointmentId">
+            </param>
+            <returns>
+                the cancelled appointment details
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.AppointmentController.GetPatientAppointments(System.Int32)">
+            <summary>
+                get details of patient appointments
+            </summary>
+            <param name="patinetId">
+            </param>
+            <returns>
+                patient appointments List
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.AppointmentController.GetScheduleForSpecificDate(System.Int32,System.DateOnly)">
+            <summary>
+                show the working dates and hours for a doctor in specefic date and time
+            </summary>
+            <param name="doctorId"></param>
+            <param name="date"></param>
+            <returns>
+                the doctor appoinment times , the appointment time is 20 minutes
+            </returns>        
+        </member>
+        <member name="M:MS.WebAPI.Controllers.authenticationController.Login(MS.Application.Contracts.User.DTOs.UserLoginDTO)">
+            <summary>
+                authentication users for using Web API
+                after successful authentication, user will get a token in response > headers > authentication
+                user for next request must enter token in authorization
+            </summary>
+            <param name="model">
+                we need email and password for logining
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.DoctorController.AddDoctor(MS.Application.Contracts.Doctor.DTOs.DoctorCreateDTO)">
+            <summary>
+                add a new doctor
+            </summary>
+            <param name="newDoctor">
+                we must enter doctor first name and last name as fullName , doctor speciality and doctor medical system number
+            </param>
+            <returns>
+                the details of new doctor
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.DoctorController.UpdateDoctor(MS.Application.Contracts.Doctor.DTOs.DoctorUpdateDTO)">
+            <summary>
+                this action method is for changing doctor datails
+            </summary>
+            <param name="doctor">
+                we must enter doctor id , doctor first name and last name as full name , doctor speciality and doctor medical system number
+            </param>
+            <returns>
+                the updated doctor details 
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.DoctorController.GetDoctorById(System.Int32)">
+            <summary>
+                get doctor details by doctor id
+            </summary>
+            <param name="doctorId"></param>
+            <returns>
+                doctor datails
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.DoctorController.GetAllDoctors">
+            <summary>
+                show all doctors with details
+            </summary>
+            <returns>
+                list of doctors
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.PatientController.AddPatient(MS.Application.Contracts.Patient.DTOs.PatientCreateDTO)">
+            <summary>
+                add new patient
+            </summary>
+            <param name="patient">
+                we need patient first name and last name as fullname and patient mobile
+                mobile must valid and 11 number
+            </param>
+            <returns>
+                the details of new patient
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.PatientController.GetPatientById(System.Int32)">
+            <summary>
+                get patient details
+            </summary>
+            <param name="patientId"></param>
+            <returns>
+                patient details
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.PatientController.GetAllPatients">
+            <summary>
+                show all patients
+            </summary>
+            <returns>
+                patients list with ever patient details
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.PatientController.Update(MS.Application.Contracts.Patient.DTOs.PatientUpdateDTO)">
+            <summary>
+                change patient datails
+            </summary>
+            <param name="newPatient"></param>
+            <returns>
+                the update patient details
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.ScheduleController.Create(MS.Application.Contracts.Schedule.DTOs.ScheduleCreateDTO)">
+            <summary>
+                create working hours and date for a doctor
+            </summary>
+            <param name="schedule">
+                we need doctor id , date , start work and finish work
+            </param>
+            <returns>
+                the new working hours and date with doctor id
+            </returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.ScheduleController.Update(MS.Application.Contracts.Schedule.DTOs.ScheduleUpdateDTO)">
+            <summary>
+                change date or working hours for a doctor with doctor id
+            </summary>
+            <param name="schedule">
+                we need doctor id , date , start work and finish work and schedule id 
+            </param>
+            <returns></returns>
+        </member>
+        <member name="M:MS.WebAPI.Controllers.ScheduleController.GetDoctorSchedules(System.Int32)">
+            <summary>
+                show doctor start work time and finish work time for dates are registerd
+            </summary>
+            <param name="doctorId"></param>
+            <returns>
+                show the List of doctor working hours with dates
+            </returns>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+    </members>
+</doc>

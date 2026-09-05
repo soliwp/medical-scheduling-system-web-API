@@ -1,0 +1,6 @@
+@MS.WebAPI_HostAddress = http://localhost:5033
+
+GET {{MS.WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

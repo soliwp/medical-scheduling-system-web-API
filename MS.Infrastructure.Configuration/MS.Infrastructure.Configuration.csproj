@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.11" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MS.Application.Contracts\MS.Application.Contracts.csproj" />
+    <ProjectReference Include="..\MS.Application\MS.Application.csproj" />
+    <ProjectReference Include="..\MS.Domain\MS.Domain.csproj" />
+    <ProjectReference Include="..\MS.Infrastructure.EF\MS.Infrastructure.EF.csproj" />
+  </ItemGroup>
+
+</Project>
