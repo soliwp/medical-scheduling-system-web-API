@@ -9,9 +9,13 @@
 به مسیر زیر رفته :
 <br>
 web api > MS.WebAPI > appSettings.json
+<br>
 بخش connention string را تغییر می‌دهیم به مقدار دلخواه
+<br>
 سپس به مسیر زیر رفته :
+<br>
 Infrastructure > MS.Infrastructure.EF
+<br>
 و پوشه migration را جذف می‌کنیم
 سپس در همین پروژه دستورات add-migration و update-database را اجرا می‌کنیم تا database در sql server نصب شود
 
