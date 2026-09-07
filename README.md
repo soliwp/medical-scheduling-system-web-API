@@ -7,6 +7,7 @@
 ## نحوه نصب
 
 به مسیر زیر رفته :
+<br>
 web api > MS.WebAPI > appSettings.json
 بخش connention string را تغییر می‌دهیم به مقدار دلخواه
 سپس به مسیر زیر رفته :
